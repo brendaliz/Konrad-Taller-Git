@@ -1,146 +1,197 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
-
-<html>
-
-    
 <head>
-        <title>Mascotas</title>
-        
-<meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       
+  <meta charset="utf-8">
+  <title>MASCOTAS</title>
+</head>
+<html>
+<!-- estilos css -->
+<style>
+  /*inicio de estilo body*/
 
-  <body>
+  body {
+    margin: 1.6em 20px;
+    background-color: powderblue;
+  }
+  /*fin del estilo body*/
+  /*inicio de estilo de barra de navegacion*/
 
-       
- <div>
-<center>   
-           
- <h1>Noticias sobre tus mascotas</h1>
-   
-</center>    
+  .menu {
+    padding: 10px 10px;
+    margin: auto;
+    width: 50%;
+    /*background-color: black;*/
+    clear: both;
+    text-align: center;
+  }
 
- <div>
-           
- <ul>
-                <li><img src="img1.jpg"></li>
-               </ul>
+  ul {
+    margin: 0 auto;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    clear: both;
+  }
+
+  li {
+    border-radius: 20px;
+    margin-left: 20px;
+    background-color: rgb(7, 47, 136);
+    display: inline-block;
+    /*float: left;*/
+    position: relative;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    border-radius: 20px;
+    background-color: rgb(25, 206, 212);
+  }
+  /*fin de estilo de barra de navegacion*/
+  /*inicio estilo encabezado*/
+
+  div.encabezado {
+    height: 150px;
+    width: 100%;
+    background-color: blue;
+  }
+
+  div h1.titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 80px;
+    letter-spacing: 3px;
+    text-shadow: 3px 2px rgb(22, 106, 129);
+  }
+  /*fin del estilo de encabezado*/
+  /*inicio de estilo contenido*/
+
+  h2 {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  p {
+    padding: 10px;
+    color: white;
+    background-color: rgb(64, 108, 136);
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .imagen {
+    text-align: center;
+  }
+
+  img {
+    border-radius: 8px;
+  }
+  /*fin de estilo de contenido*/
+  /*inicio de estilo de pie de pagina*/
+
+  .piePagina {
+    background-color: rgb(64, 108, 136);
+    width: 100%;
+    height: 100px;
+  }
+
+  p.piePaginaParrafo {
+    text-align: left;
+  }
+  /*fin de estilo de pie de pagina*/
+</style>
+
+<body>
+  <!-- encabezado -->
+  <div class="encabezado">
+    <h1 class="titulo">LAS MASCOTAS</h1>
+  </div>
+  <!-- barra de navegacion -->
+  <nav>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Noticias</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Adopcion</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- articulo o div -->
+  <h2>Noticias sobre tus mascotas</h2>
+  <div class="imagen">
+    <li><img src="img1.jpg"></li>
+  </div>
+  <div id="text1">
+    <h3>Pasear al perro, clave para una vejez saludable</h3>
+    <p>
+      Caminar regularmente con un perro ayuda a incrementar la actividad física en las personas mayores, especialmente en invierno, según ha demostrado un estudio realizado por investigadores de la Universidad de East Anglia (UEA) y el Centro de Investigación
+      de la Dieta y la Actividad (CEDAR) de la Universidad de Cambridge (Reino Unido).<br> Además, se les facilitó un acelerómetro para medir su actividad física durante siete días, si bien los resultados fueron analizados teniendo en cuenta las
+      condiciones climatológicas y la hora de la salida y puesta del sol.<br> De esta forma, los científicos comprobaron que aquellos que tenían perro eran más activos físicamente y pasaban menos tiempo sentados. Además, estas personas se movían más durante
+      los días fríos y lluviosos que los que no tenían un perro.<br><br> "Nos sorprendió descubrir que los dueños de perros eran en promedio más activos físicamente y pasaban menos tiempo sentados en los días más fríos, húmedos y oscuros que los que no
+      eran perros estaban en verano largo y soleado", han recalcado los expertos.<br>
+    </p>
+
+    <div class="imagen">
+      <li><img src="img2.jpg"></li>
+    </div>
 
 
-        </div>
-        <div id="text">
-  
-     
-<h2>Pasear al perro, clave para una vejez saludable</h2>     
-<h4>Un estudio determina que las personas con mascota andan más y están menos tiempo sentadas.</h4>
+    <h3>Los gatos, reyes de las redes</h3>
+    <p>
+      Los felinos se han convertido en la mascota favorita de Internet. Gracias al auge de las redes sociales y de la infinidad de videos que se publican diariamente, ¡algunos se están convirtiendo en auténticos influencers! Con motivo del Día Internacional
+      <br> del Gato que se celebra hoy, 8 de agosto, nos unimos a la marca Kiwoko para rendir homenaje a estos adorables compañeros haciendo un repaso de algunos de los gatos más famosos del mundo online.<br>
+    </p>
 
-<center>
-
-<pre>
-
-Caminar regularmente con un perro ayuda a incrementar la actividad física en las personas mayores, especialmente en invierno, según ha demostrado un estudio realizado por investigadores de la Universidad de East Anglia (UEA) y el Centro de Investigación de la Dieta y la Actividad (CEDAR) de la Universidad de Cambridge (Reino Unido).
-Publicado en el 'Journal of Epidemiology and Community Health', los investigadores analizaron a más de 3.000 personas mayores, quienes tuvieron que responder si tenían o no perro y cuánto caminaban al día. 
-Publicado en el 'Journal of Epidemiology and Community Health', los investigadores analizaron a más de 3.000 personas mayores, quienes tuvieron que responder si tenían o no perro y cuánto caminaban al día.
-
-Además, se les facilitó un acelerómetro para medir su actividad física durante siete días, si bien los resultados fueron analizados teniendo en cuenta las condiciones climatológicas y la hora de la salida y puesta del sol.
-
-De esta forma, los científicos comprobaron que aquellos que tenían perro eran más activos físicamente y pasaban menos tiempo sentados. Además, estas personas se movían más durante los días fríos y lluviosos que los que no tenían un perro.
-
-"Nos sorprendió descubrir que los dueños de perros eran en promedio más activos físicamente y pasaban menos tiempo sentados en los días más fríos, húmedos y oscuros que los que no eran perros estaban en verano largo y soleado", han recalcado los expertos.
-
-</pre>  
-           
- </center>
-
-<div>
-           
- <ul>
-                <li><img src="img2.jpg"></li>
-               </ul>
+    <div class="imagen">
+      <li><img src="img3.jpg"></li>
+    </div>
 
 
-        </div>
- 
-
-<h2>Los gatos, reyes de las redes</h2>     
-<h4>En el Día Internacional del Gato, repasamos algunos de los felinos más famosos del mundo online</h4>
+    <h3>Casi 150.000 mascotas fueron abandonadas el año pasado</h3>
 
 
-<center>
+    <p>
+      Un total de 104.447 perros y 33.335 gatos fueron recogidos en 2016 por sociedades protectoras en España, según un 'Estudio de Fundación Affinity sobre el abandono y la adopción 2017', que alerta que la cifra de abandono está estancada y estable pero sigue
+      siendo "muy elevada". Entre los principales motivos, según Affinity, apunta al nacimiento de camadas indeseadas, seguido del comportamiento del animal y el final de la temporada de caza. El informe apunta a un estancamiento entre el número de animales
+      de compañía que llegan a entidades protectoras y rompe con la tendencia ligeramente positiva de los últimos años.
+    </p>
 
-<pre>
+    <p>
+      Un buen aficionado de los perros sabe que el cariño que nos demuestran diariamente es inagotable y que además les gusta demostrarlo con grandes lengüetazos. ¿O deberíamos llamarles besos? Sin embargo, nunca te imaginaste que estas muestras de afecto podrían
+      terminar con tu vida. El profesor de virología y bacteriología de la Universidad Queen Mary de Londres, John Oxford, comentó para The Mirror que tanto la saliva como el hocico de los caninos tienen una cantidad de bacterias tan elevada que pueden
+      causar problemas graves en el ser humano. Si recordamos las actividades cotidianas de nuestras mascotas lo entenderemos mejor. "No es sólo lo que llevan en la saliva", explicó Oxford. "Los perros pasan la mitad de su vida con la nariz en esquinas
+      asquerosas o merodeando sobre las heces de otros perros así que sus hocicos están llenos de bacterias, virus y gérmenes de todo tipo". Entre las enfermedades destacan la capnocytophaga canimorsus un organismo que habita en la flora normal de las
+      encías de perros y gatos causante de infecciones estomacales graves y en algunos casos fulminantes; la tiña es una enfermedad de la piel que es fácilmente contagiosa a través de la saliva del perro; el estafilococo áureo que no suele afectar al
+      animal pero que es sumamente perjudicial para el humano y muy resistente a los medicamentos, entre muchas, muchas otras.
+    </p>
 
-Los felinos se han convertido en la mascota favorita de Internet. Gracias al auge de las redes sociales y de la infinidad de videos que se publican diariamente, ¡algunos se están convirtiendo en auténticos influencers! Con motivo del Día Internacional del Gato que se celebra hoy, 8 de agosto, nos unimos a la marca Kiwoko para rendir homenaje a estos adorables compañeros haciendo un repaso de algunos de los gatos más famosos del mundo online.
-</pre>  
-           
- </center>
+    <div class="imagen">
+      <li><img src="img5.jpg"></li>
+    </div>
 
-  
-<div>
-           
- <ul>
-                <li><img src="img3.jpg"></li>
-               </ul>
+    <!-- informacion general de la pagina -->
+    <div class="piePagina">
+      <p class="piePaginaParrafo">
+        telefono: 69431358438 <br>
+        correo: mascotas@gmail.com
+      </p>
+    </div>
 
+</body>
 
-        </div>
- 
-
-<h2>Casi 150.000 mascotas fueron abandonadas el año pasado</h2>     
-<h4>Comportamiento del animal y camadas indeseadas, entre los motivos, según Fundación Affinity</h4>
-
-
-<center>
-
-<pre>
-
-Un total de 104.447 perros y 33.335 gatos fueron recogidos en 2016 por sociedades protectoras en España, según un 'Estudio de Fundación Affinity sobre el abandono y la adopción 2017', que alerta que la cifra de abandono está estancada y estable pero sigue siendo "muy elevada".
-Entre los principales motivos, según Affinity, apunta al nacimiento de camadas indeseadas, seguido del comportamiento del animal y el final de la temporada de caza.
-El informe apunta a un estancamiento entre el número de animales de compañía que llegan a entidades protectoras y rompe con la tendencia ligeramente positiva de los últimos años.
-</pre>  
-           
- </center>
-
-  
-<div>
-           
- <ul>
-                <li><img src="img4.jpg"></li>
-               </ul>
-
-
-        </div>
- 
-
-<h2>Los peligros de los besos de los perros</h2>     
-<h4>Tanto la saliva como el hocico de los canes tienen bacterias que pueden causar problemas graves de salud en el ser humano</h4>
-
-
-<center>
-
-<pre>
-
-Un buen aficionado de los perros sabe que el cariño que nos demuestran diariamente es inagotable y que además les gusta demostrarlo con grandes lengüetazos. ¿O deberíamos llamarles besos? Sin embargo, nunca te imaginaste que estas muestras de afecto podrían terminar con tu vida.
-
-El profesor de virología y bacteriología de la Universidad Queen Mary de Londres, John Oxford, comentó para The Mirror que tanto la saliva como el hocico de los caninos tienen una cantidad de bacterias tan elevada que pueden causar problemas graves en el ser humano. Si recordamos las actividades cotidianas de nuestras mascotas lo entenderemos mejor.
-
-"No es sólo lo que llevan en la saliva", explicó Oxford. "Los perros pasan la mitad de su vida con la nariz en esquinas asquerosas o merodeando sobre las heces de otros perros así que sus hocicos están llenos de bacterias, virus y gérmenes de todo tipo".
-
-Entre las enfermedades destacan la capnocytophaga canimorsus un organismo que habita en la flora normal de las encías de perros y gatos causante de infecciones estomacales graves y en algunos casos fulminantes; la tiña es una enfermedad de la piel que es fácilmente contagiosa a través de la saliva del perro; el estafilococo áureo que no suele afectar al animal pero que es sumamente perjudicial para el humano y muy resistente a los medicamentos, entre muchas, muchas otras.
-</pre>  
-           
- </center>
-
-  
-<div>
-           
- <ul>
-                <li><img src="img5.jpg"></li>
-               </ul>
-
-
-        </div>
- 
-  </body>
 </html>
